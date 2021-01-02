@@ -1,0 +1,42 @@
+<!-- index.html -->
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>Form - Input</title>
+  <link rel="stylesheet" href="https://spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+
+    <h1>회원가입</h1>
+
+    <form action="3" method="POST">
+        <!-- placeholder-input에 적고싶은거(value랑 다름) 복사가 안됨, required-반드시 입력해야한다,  disabled-값을 넣어줄수없다. value-어떤값을 주는거(복사가능) -->    
+        <label for="user-id">ID</label>
+        <input id="user-id" type="text" placeholder="아이디를 입력하세요" minlength="5" maxlength="13" required />
+        <label for="user-name">이름</label>
+        <input id="user-name" type="text" placeholder="이름을 입력하세요" minlength="5" maxlength="13" disabled value="김정민" />
+        <label for="user-email">이메일</label>
+        <input id="user-email" type="email" placeholder="이메일을 입력하세요" />
+        <label for="user-password">비밀번호</label>
+        <input id="user-password" type="password" placeholder="비밀번호를 입력하세요" minlength="6" />
+        <label for="user-tel">전화번호</label>
+        <input id="user-tel" type="tel" placeholder="전화번호 (***-****-****)" pattern="[0-9]{3}-[0-9]{4}-[0-9]{4}" />
+        <label for="user-url">URL</label>
+        <input id="user-url" type="url" placeholder="포트폴리오 URL을 적으시오" />
+        <label for="user-age">만 나이</label>
+        <input id="user-age" type="number" placeholder="나이를 입력하세요 (12세 이상 ~ 122세 이하)" min="12" max="122"/>          <!-- min,max는 type이 number인 경우에만 쓴다 min,max가 minlength, maxlength랑 다른거 구별해야함 -->
+        <label for="user-file">파일</label>
+        <input id="user-file" type="file" accept=".png, .jpg"/>
+
+        <button type="submit">
+            가입하기
+        </button>
+
+    </form>
+    
+    
+</body>
+</html>

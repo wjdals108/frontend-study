@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <audio src="./assets/audios/kimbug.mp3" controls></audio>               <!-- controls-소리조절 등, auto - 자동재생, loop auto - 자동 반복재생 -->
+    
+    <audio controls>                                                        <!-- 이런식으로도 써줄 수 있음 -->
+        <source src="./assets/audios/kimbug.wav" type="audio/wav">
+        <source src="./assets/audios/kimbug.ogg" type="audio/ogg">          <!-- source를 여러개 넣어준거는 wav ogg mp3중에 안되는 브라우저를 사용하고 있을 수도 있으니 -->
+        <source src="./assets/audios/kimbug.mp3" type="audio/mpeg">
+        <p>
+            브라우저를 다른거 사용하세요
+        </p>
+    </audio>
+
+    <video src="./assets/videos/kimbug.mov" controls></video>
+
+    <video controls>
+        <source src="./assets/videos/kimbug.mov" type="video/mp4">
+        <source src="./assets/videos/kimbug.mp4" type="video/mp4">
+        <p>
+            브라우저를 다른거 사용하세요
+        </p>
+    </video>
+
+    <iframe src="https://edu.goorm.io" frameborder="0"></iframe>            <!-- iframe은 직접 작성할 일은 크게 없고 다른 웹사이트에서 동영상이나 이런것들 가져 올때 주로 복사해와서 사용한다. -->
+</body>
+</html>
